@@ -1,4 +1,5 @@
 import './globals.css';
+import Navbar from '@/components/Navbar';
 
 export const metadata = {
   title: 'Rive - Rocket Animation',
@@ -12,7 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body className='bg-[#124D70]'>
+        <div>
+          <Navbar></Navbar>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
